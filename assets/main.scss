@@ -3,20 +3,82 @@
 ---
 
 @import "minima";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900i');
+
+$header-width: 15rem;
+
+* {
+	box-sizing: border-box;
+}
 
 body {
     background: white;
 }
 
-section {
-	min-height: 90vh;
-	&#about {
-		background: gray;
+h1,h2,h3,h4 {
+	font-family: 'Playfair Display', serif;
+}
+
+h2 {
+	font-weight: 900;
+	font-style: italic;
+	font-size: 8rem;
+	line-height: 1;
+	margin-bottom: 2.5rem;
+}
+
+.site-header {
+	width: $header-width;
+	position: fixed;
+	border-top: 0;
+	border-bottom: none;
+	.header-wrapper {
+    display: flex;
+    flex-direction: column;
+		padding: 2rem;
+		.site-nav {
+			line-height: 1rem;
+			.navbar {
+				.nav {
+					font-family: 'Playfair Display', serif;
+					font-weight: 900;
+					font-style: italic;
+					font-size: 1.8rem;
+					list-style-type: none;
+					&:hover {
+						list-style-type: disc;
+					}
+					.page-link {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		svg {
+			transform: scale(-1,1);
+		}
 	}
-	&#offer {
-		background: red;
-	}
-	&#contact {
-		background: wheat;
+}
+.page-content {
+	padding: 0;
+	.wrapper {
+		max-width: 100%;
+    padding: 0;
+		&#about {
+			background: #968f8f;
+		}
+		&#offer {
+			background: #d0625f;
+		}
+		&#contact {
+			background: #91b4bd;
+		}
+		section {
+			display: flex;
+			align-items: center;
+			min-height: 100vh;
+			margin-left: calc(#{$header-width} + 2rem);
+			padding: 2rem;
+		}
 	}
 }

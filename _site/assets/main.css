@@ -1,4 +1,5 @@
 /** Reset some basic elements */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900i");
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
@@ -195,9 +196,25 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
+* { box-sizing: border-box; }
+
 body { background: white; }
 
-section { min-height: 90vh; }
-section#about { background: gray; }
-section#offer { background: red; }
-section#contact { background: wheat; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+h2 { font-weight: 900; font-style: italic; font-size: 8rem; line-height: 1; margin-bottom: 2.5rem; }
+
+.site-header { width: 15rem; position: fixed; border-top: 0; border-bottom: none; }
+.site-header .header-wrapper { display: flex; flex-direction: column; padding: 2rem; }
+.site-header .header-wrapper .site-nav { line-height: 1rem; }
+.site-header .header-wrapper .site-nav .navbar .nav { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; font-size: 1.8rem; list-style-type: none; }
+.site-header .header-wrapper .site-nav .navbar .nav:hover { list-style-type: disc; }
+.site-header .header-wrapper .site-nav .navbar .nav .page-link { text-decoration: underline; }
+.site-header .header-wrapper svg { transform: scale(-1, 1); }
+
+.page-content { padding: 0; }
+.page-content .wrapper { max-width: 100%; padding: 0; }
+.page-content .wrapper#about { background: #968f8f; }
+.page-content .wrapper#offer { background: #d0625f; }
+.page-content .wrapper#contact { background: #91b4bd; }
+.page-content .wrapper section { display: flex; align-items: center; min-height: 100vh; margin-left: calc(15rem + 2rem); padding: 2rem; }
