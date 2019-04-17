@@ -45,8 +45,9 @@ h2 {
 					font-style: italic;
 					font-size: 1.8rem;
 					list-style-type: none;
-					&:hover {
+					&.active {
 						list-style-type: disc;
+						color: initial;
 					}
 					.page-link {
 						text-decoration: underline;

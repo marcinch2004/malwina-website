@@ -208,7 +208,7 @@ h2 { font-weight: 900; font-style: italic; font-size: 8rem; line-height: 1; marg
 .site-header .header-wrapper { display: flex; flex-direction: column; padding: 2rem; }
 .site-header .header-wrapper .site-nav { line-height: 1rem; }
 .site-header .header-wrapper .site-nav .navbar .nav { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; font-size: 1.8rem; list-style-type: none; }
-.site-header .header-wrapper .site-nav .navbar .nav:hover { list-style-type: disc; }
+.site-header .header-wrapper .site-nav .navbar .nav.active { list-style-type: disc; color: initial; }
 .site-header .header-wrapper .site-nav .navbar .nav .page-link { text-decoration: underline; }
 .site-header .header-wrapper svg { transform: scale(-1, 1); }
 
